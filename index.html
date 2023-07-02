@@ -5,14 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Huma Malik Portfolio</h1>
-    <h2>About Me</h2>
-    <h2>Projects CHANGE LAST CHECK</h2>
-    <h2>Contact Me</h2>
+    <nav>
+      <h1>Huma Malik Portfolio</h1>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#about-me">About Me</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
 
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm Huma, a student of web development. I'm learning about coding; everything from HTML, CSS, to Javascript.
+              I love Javascript but have a long way to go to refine and improve my skills. I'm excited to keep learning. 
+              I hope you will stay with me on this journey! 
+            </p>
+            <p>
+              Fun fact! I've been programming for
+              <span id="time-container">0</span> seconds!
+            </p>
+          </div>
+          <img src="/portpic.jpg" alt="A photo of Huma" class="portrait"/>
+        </div>
+      </section>
+      
+    </main>
 
   </body>
 
