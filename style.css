@@ -1,35 +1,38 @@
 body {
     font-family: 'Roboto';
-    margin 0;
+    margin 0 auto;
     padding: 0;
     font size: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    
+   
+    
     }
 
 
 nav {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
-    margin: 0 10%;
+    margin: 0;
     }
 
 .nav-items {
     display: inline-flex;
-    padding: 10px 100px;
+    padding: 20px 100px;
     font-weight: bold;
     font-size: 25px;
+    align-items: center;
 }
 
 .nav-item {
     padding: 10px;
+    
     list-style-type: none;
 }
 
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .heart {
@@ -47,7 +50,7 @@ h2 {
 }
 
 #projects {
-    margin: 50px;
+    margin: 25px;
 }
 
 .project {
@@ -86,6 +89,32 @@ a {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.about-me-container {
+    width: 800px;
+    text-align: center;
+    display: inline-block;
+}
+
+#skills {
+    width: 800px;
+    text-align: center;
+    display: inline-block;
+    margin: 25px;
+
+}
+
+#skills h2 {
+    padding: 25px;
+}
+
+#contact-me {
+    margin: 25px;
+}
+
+#contact-me-icons i {
+    padding: 15px;
 }
 
 @media only screen and
