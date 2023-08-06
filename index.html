@@ -9,6 +9,19 @@
     <script src="https://kit.fontawesome.com/d7aa56bbb6.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap');
+      body {
+        font-family: 'Roboto';
+        margin 0 auto;
+        padding: 0;
+        font size: 1.4rem;
+        text-align: center;
+        background-color: pearl;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -95,10 +108,21 @@
       </section>
     </main>
 
-    <footer>Made with <span class="heart">♥</span> in London</footer>
-  </body>
-  <script>
+    <section id="java">
+      <h2>Toggle between Dark and Light Mode</h2>
+      <p>Click this button to switch into dark mode for this page</p>
+      <button onclick="myFunction()">Toggle dark mode</button>
+    </section>
 
-  </script>
+    <footer>Made with <span class="heart">♥</span> in London</footer>
+
+    <script>
+      function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+  
 
   </html>

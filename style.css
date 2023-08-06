@@ -1,38 +1,28 @@
-body {
-    font-family: 'Roboto';
-    margin 0 auto;
-    padding: 0;
-    font size: 20px;
-    text-align: center;
-    
-   
-    
-    }
-
 
 nav {
     display: inline-flex;
     justify-content: space-around;
     margin: 0;
+    
     }
 
 .nav-items {
     display: inline-flex;
     padding: 20px 100px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1rem;
     align-items: center;
 }
 
 .nav-item {
     padding: 10px;
-    
     list-style-type: none;
 }
 
 
 h1 {
-    font-size: 50px;
+    font-size: 2.4rem;
+    
 }
 
 .heart {
@@ -91,10 +81,20 @@ a {
     flex-wrap: wrap;
 }
 
+#about-me {
+    background-image: url('./bgphoto.jpg');
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    height: 800px;
+    padding-top: 30px;
+    background-size: cover;
+}
+
 .about-me-container {
     width: 800px;
     text-align: center;
     display: inline-block;
+    
 }
 
 #skills {
@@ -117,11 +117,45 @@ a {
     padding: 15px;
 }
 
-@media only screen and
- 
+@media (max-width: 320px) {
+    body, 
+    #projects
+    #contact-me
+    footer
+    #java 
+    {
+        width: 800px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #skills-container {
+        flex-wrap: wrap;
+    }
+}
 
 
+@media (max-width: 1043px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
+    .nav-items a {
+        font-size: 1rem;
+    }
 
+    }
 
+@media (max-width: 827px) {
+    #about-me {
+        width: 800px;
+        
+    }
+}
 
